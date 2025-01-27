@@ -14,11 +14,11 @@ public class LinkedInClient
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Get,
-            RequestUri = new Uri($"https://{ApiConstants.ApiHost}/?username={username}"),
+            RequestUri = new Uri($"https://{ApiConstants.ApiHostLinkedin}/?username={username}"),
         };
 
         request.Headers.Add("x-rapidapi-key", ApiConstants.ApiKey);
-        request.Headers.Add("x-rapidapi-host", ApiConstants.ApiHost);
+        request.Headers.Add("x-rapidapi-host", ApiConstants.ApiHostLinkedin);
 
 
         try
